@@ -21,7 +21,6 @@ install:
   - npm i
 
 before_script:
-  - npm run db:start
   - echo "Install oracle client libs to db container and copy to hosts ~/lib for node
     oracledb driver..."
   - docker-compose -f scripts/docker-compose.yml exec oracledbxe curl http://yum.oracle.com/public-yum-ol7.repo
